@@ -17,8 +17,11 @@ class Command(BaseCommand):
     help = 'Installs the 2010/2011/2012/2013 TIGER/LINE files for all zipcodes, all states, and all counties'
 
     def add_arguments(self, parser):
-        parser.add_argument('--path', default='', dest='path',
-            help='The directory where the TIGER/LINE data is stored.'),
+        parser.add_argument(
+            '--path',
+            default='',
+            dest='path',
+            help='The directory where the TIGER/LINE data is stored.'
         )
 
     def handle(self, *args, **kwargs):

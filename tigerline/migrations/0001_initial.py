@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
             name='County',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('state_fips_code', models.CharField(max_length=b'2', verbose_name='State FIPS Code')),
+                ('state_fips_code', models.CharField(max_length=2, verbose_name='State FIPS Code')),
                 ('fips_code', models.CharField(max_length=3, verbose_name='FIPS Code')),
                 ('county_identifier', models.CharField(max_length=5)),
                 ('name', models.CharField(max_length=100)),

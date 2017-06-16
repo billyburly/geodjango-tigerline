@@ -15,6 +15,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='county',
             name='state_fips_code',
-            field=models.CharField(max_length=2, verbose_name=b'State FIPS Code'),
+            field=models.CharField(max_length=2, verbose_name='State FIPS Code'),
         ),
     ]
